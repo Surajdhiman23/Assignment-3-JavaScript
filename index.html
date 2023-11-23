@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="student-info"></div>
+<form id="pizzaOrderForm">
+    <h2>Order Your Pizza</h2>
+
+    <!-- Pizza Size -->
+    <label for="size">Size:</label>
+    <select id="size" name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select><br>
+
+    <!-- Toppings Selection -->
+    <fieldset>
+        <legend>Toppings:</legend>
+        <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+        <input type="checkbox" id="olives" name="toppings" value="Olives">
+        <label for="olives">Olives</label><br>
+        <!-- Add more toppings as needed -->
+    </fieldset>
+
+    <!-- Additional Options -->
+    <fieldset>
+        <legend>Extras:</legend>
+        <input type="checkbox" id="extraCheese" name="extras" value="Extra Cheese">
+        <label for="extraCheese">Extra Cheese</label><br>
+        <input type="checkbox" id="glutenFree" name="extras" value="Gluten Free Crust">
+        <label for="glutenFree">Gluten Free Crust</label><br>
+    </fieldset>
+
+    <input type="submit" value="Order">
+</form>
+
+<div id="pizzaDescription"></div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
